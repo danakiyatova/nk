@@ -1,0 +1,41 @@
+﻿<Window x:Class="NailsApp.View.EditPerson"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NailsApp.View"
+        mc:Ignorable="d"
+        ResizeMode="CanMinimize"
+        WindowStartupLocation="CenterScreen"
+        Icon="/View/Images/nail.png"
+        Title="Редактировать" Height="450" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+           
+        </Grid.RowDefinitions>
+        <TextBlock Text="Имя: " Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="20"/>
+        <TextBlock Text="Фамилия: " Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="20"/>
+        <TextBlock Text="Отчество: " Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="20"/>
+        <TextBlock Text="Дата рождения: " Grid.Row="3" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="20"/>
+        <TextBlock Text="Телефон: " Grid.Row="4" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="20"/>
+
+        <TextBox Grid.Row="0" Grid.Column="1" Height="30" Text="{Binding FirstName}"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Height="30" Text="{Binding LastName}"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Height="30" Text="{Binding MiddleName}"/>
+        <DatePicker Grid.Row="3" Grid.Column="1" Height="30" SelectedDate="{Binding BornDate}"/>
+        <TextBox Grid.Row="4" Grid.Column="1" Height="30" Text="{Binding Phone}"/>
+
+        <Button x:Name="btnEdit" Content="Редактировать" Height="30" Width="150" Grid.Column="1" Grid.Row="6" Background="#b3dcfd" Click="btnEdit_Click"/>
+        <Button x:Name="btnDelete" Content="Удалить" Height="30" Width="150" Grid.Column="0" Grid.Row="6" Background="#b3dcfd" Click="btnDelete_Click"/>
+    </Grid>
+</Window>

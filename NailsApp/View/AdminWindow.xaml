@@ -1,0 +1,38 @@
+﻿<Window x:Class="NailsApp.View.AdminWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NailsApp.View"
+        mc:Ignorable="d"
+        ResizeMode="CanMinimize"
+        WindowStartupLocation="CenterScreen"
+        Icon="/View/Images/nail.png"
+        Title="Главное окно администратора" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="150"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25px"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Menu Height="Auto">
+            <MenuItem Header="Справка" Click="MenuItem_Click"/>
+        </Menu>
+        <DataGrid ItemsSource="{Binding Users}" AutoGenerateColumns="False" IsReadOnly="True" x:Name="dgUser" SelectionChanged="DataGrid_SelectionChanged" Grid.Row="1">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Имя мастера" Binding="{Binding FirstName}"/>
+                <DataGridTextColumn Header="Фамилия мастера" Binding="{Binding LastName}"/>
+                <DataGridTextColumn Header="Отчество мастера" Binding="{Binding MiddleName}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <StackPanel Grid.Column="1" Margin="0 70 0 0" Grid.Row="1">
+            <Button x:Name="btnAdd" Content="Добавить пользователя" Height="30" Width="150" Grid.Column="1" Background="#b3dcfd" Click="btnAdd_Click"/>
+            <Button x:Name="btnUpdate" Content="Обновить" Height="30" Width="150" Grid.Column="1" Background="#b3dcfd" Click="btnUpdate_Click" Margin="0 70 0 0"/>
+        </StackPanel>
+        
+    </Grid>
+</Window>

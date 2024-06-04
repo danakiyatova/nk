@@ -1,0 +1,15 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=HelpSystem.chm
+Default topic=C:\Users\Admin\Desktop\мдк 02 02\samira\about-program.htm
+Display compile progress=No
+Language=0x419 Русский (Россия)
+Title=Справочная система
+
+
+[FILES]
+C:\Users\Admin\Desktop\мдк 02 02\samira\about-program.htm
+C:\Users\Admin\Desktop\мдк 02 02\samira\spravka.htm
+
+[INFOTYPES]
+

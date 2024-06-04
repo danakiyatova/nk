@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33529.622
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NailsApp", "NailsApp\NailsApp.csproj", "{322FF517-7F55-49C4-A952-A7C82FE7B13E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{322FF517-7F55-49C4-A952-A7C82FE7B13E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{322FF517-7F55-49C4-A952-A7C82FE7B13E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{322FF517-7F55-49C4-A952-A7C82FE7B13E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{322FF517-7F55-49C4-A952-A7C82FE7B13E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5D4D8FF5-B3C9-41BA-AB29-BD0F357BBE94}
+	EndGlobalSection
+EndGlobal
